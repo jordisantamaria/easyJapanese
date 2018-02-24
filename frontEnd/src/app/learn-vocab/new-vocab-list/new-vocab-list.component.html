@@ -1,0 +1,15 @@
+<form (ngSubmit)="onSubmit(f)" #f="ngForm" >
+  <mat-form-field>
+    <input matInput placeholder="Nombre" name="name" [ngModel] required>
+  </mat-form-field>
+
+  <mat-form-field>
+    <textarea matInput placeholder="Autosize textarea" matTextareaAutosize matAutosizeMinRows="2"
+              matAutosizeMaxRows="100" name="vocabItems" [ngModel]>
+    </textarea>
+  </mat-form-field>
+
+
+
+  <button type="submit" mat-raised-button color="accent">Enviar</button>
+</form>

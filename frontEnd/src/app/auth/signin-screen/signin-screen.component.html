@@ -1,0 +1,14 @@
+<form [formGroup]="signinForm" (ngSubmit)="onSubmit()" novalidate>
+  <mat-input-container>
+    <input matInput placeholder="Correo electrónico"
+           formControlName="email" id="email">
+  </mat-input-container>
+  <mat-input-container>
+    <input matInput placeholder="Contraseña"
+           formControlName="password" id="password">
+  </mat-input-container>
+  <button type="submit" mat-raised-button color="accent">Iniciar sesión</button>
+  <p styple="text-align: center">¿Eres nuevo?
+    <a routerLink="/signup">Crear usuario</a>
+  </p>
+</form>
